@@ -8,10 +8,7 @@ A simple console-based Rock Paper Scissors game implemented in C++.
 
 ## 🚀 How to Run
 1. *Prerequisites*:  
-   - Ensure you have a C++ compiler (e.g., g++).  
-   - Clone this repository:  
-     bash
-     git clone https://github.com/your-username/rock-paper-scissors-cpp.git
+   - Ensure you have a C++ compiler (e.g., g++). 
      
 2. *Compile & Execute*:  
    ```bash
