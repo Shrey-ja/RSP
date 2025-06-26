@@ -33,6 +33,3 @@ Feel free to:
 - Report bugs 🐛  
 - Suggest improvements 💡  
 - Fork and submit pull requests!  
-
-## 📜 License
-
