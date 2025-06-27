@@ -1,24 +1,25 @@
 #include <iostream>
 #include <ctime>
+//function dec
 char guserc();
 char gcompc();
 void showc(char choice);
 void win(char player, char computer);
-
+// main starts here
 int main(){
     char player;
     char computer;
-    srand(time(0));
-player = guserc();
+    srand(time(0)); //uses time to generate a random number
+player = guserc();// user choice
 std::cout<<"your choice: ";
 showc(player);
-computer=gcompc();
+computer=gcompc();//computer's choice
 std::cout<<"computer's choice: ";
 showc(computer);
 win(player,computer);
 }
 
-
+//function def
 char guserc(){
     char player;
     std::cout<<"****ROCK PAPER SISSORS****\n";
@@ -34,7 +35,7 @@ char guserc(){
     return player;
 }
 char gcompc(){
-    int num = (rand()%3)+1;
+    int num = (rand()%3)+1;//to choose randomly between r,s,p
     switch(num){
         case 1: return 'r';
                 break;
@@ -46,7 +47,7 @@ char gcompc(){
     return 'r';
 }
 void showc(char choice){
-    
+
     switch(choice){
         case 'r': std::cout<<"ROCK\n";
                 break;
@@ -56,6 +57,7 @@ void showc(char choice){
                 break;
     }
 }
+// for the win/lose/draw funntion
 void win(char player, char computer){
     switch(player){
         case 'r':
